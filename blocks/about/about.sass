@@ -1,0 +1,46 @@
+.about
+  width: 100%
+  &__container
+    +container()
+  &_content
+    display: flex
+    flex-flow: column
+    align-items: center
+    @media only screen and #{$md}
+      display: flex
+      flex-flow: row
+      justify-content: space-between
+      text-align: center
+      align-items: flex-start
+    &__title
+      display: inline-block
+      position: relative
+      font-family: $main-font
+      font-size: 48px
+      font-weight: 300
+      color: $title-color
+      margin-top: 108px
+      @media only screen and #{$md}
+        text-align: left
+        +col(5)
+      &::after
+        content: ''
+        width: 80px
+        height: 3px
+        position: absolute
+        background-color: #4a24a8
+        display: block
+        left: 0
+        top: 70px
+    &__text
+      margin: 99px 0 113px 0
+      font-family: $main-font
+      font-size: 18px
+      line-height: 1.67
+      text-align: left
+      color: $text-color
+      width: 100%
+      text-align: center
+      @media only screen and #{$md}
+        +col(7)
+        text-align: left

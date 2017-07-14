@@ -1,0 +1,11 @@
+mixin what(items)
+  +b.SECTION#what.what
+    +e.DIV.container
+      +e.H2.title What we do
+      +b.DIV.what-items
+        each item in items
+          +b.DIV.what-item
+            +e.IMG.img(src="img/" +item.img+ ".png")
+            +e.H3.title= item.title
+            +e.P.text= item.text
+        +b.A.what-more(href="#") Show more

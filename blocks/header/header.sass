@@ -1,0 +1,46 @@
+.header
+  width: 100%
+  position: fixed
+  top: 30px
+  left: 0
+  z-index: 100
+  box-sizing: border-box
+  &__container
+    +container()
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+
+.nav
+  display: flex
+  justify-content: flex-end
+  align-items: center
+
+  &__title
+    margin-right: 20px
+    font-family: $main-font
+    font-size: 18px
+    color: #fff
+  &-container
+    position: absolute
+    top: 70px
+    right: 0
+    display: flex
+    flex-direction: column
+    background-color: rgba(245, 245, 245, 0.96)
+    height: 350px
+    width: 200px
+    transition: all .3s
+    justify-content: space-around
+    align-items: center
+    transform: translateX(200px)
+    &__item
+      font-family: $main-font
+      font-size: 24px
+      color: #fff
+      padding: 0 20px
+      color: $accent-color
+    &--active
+      transform: translateX(0)
+      transition: all .3s

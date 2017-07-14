@@ -1,0 +1,47 @@
+#slider
+  position: relative
+  width: 100%
+  height: 250px
+  margin: 0 auto
+  margin-top: 150px
+  box-sizing: border-box
+  overflow-x: hidden
+#prevSlide
+  position: absolute
+  top: 0
+  left: 0
+  display: block
+  height: 100%
+  width: 200px
+  opacity: 0
+  background: linear-gradient(to right, $accent-color, rgba(255, 255, 255, 0))
+  transition: .3s
+  cursor: pointer
+  &:hover
+    transition: .3s
+    opacity: .7
+#nextSlide
+  position: absolute
+  top: 0
+  right: 0
+  display: block
+  height: 100%
+  width: 200px
+  opacity: 0
+  background: linear-gradient(to left, $accent-color, rgba(255, 255, 255, 0))
+  transition: .3s
+  cursor: pointer
+  &:hover
+    transition: .3s
+    opacity: .7
+
+
+.slides
+  position: relative
+  padding: 0
+  margin: 0
+  list-style: none
+  height: 100%
+  &__img
+    float: left
+    height: 100%

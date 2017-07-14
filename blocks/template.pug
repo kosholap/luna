@@ -1,0 +1,96 @@
+include _assets/bemto/bemto
+- set_bemto_settings({ modifier: "--" })
+
+include head/head
+include header/header
+include start/start
+include about/about
+include slider/slider
+include what/what
+include payme/payme
+include twitter/twitter
+include footer/footer
+
+doctype html
+html(lang="ru")
+
+	block head
+		head
+			+head({
+				"title": "Luna",
+				"author": "Olha Kosholap",
+				"description": "Luna"
+			})
+			
+		body
+			block header
+				+header
+			block start
+				+start
+			block about
+				+about
+			block slider
+				+slider
+			block what
+				+what([
+				{
+					"img": "1",
+					"title": "Beautiful design",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},				
+				{
+					"img": "2",
+					"title": "BEST DEVELOPMENT",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				},				
+				{
+					"img": "3",
+					"title": "WEB PROMOTE",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+				}				
+				])
+			block payme
+				+payme([
+				{
+				"title": "Mobile Apps UX / UI",
+				"text": "Payme Mobile App"
+				},
+				{
+				"title": "WEBSITES UX / UI",
+				"text": "Interactive Agency"
+				},
+				{
+				"title": "WEBSITES UX / UI",
+				"text": "Nava.com Website"
+				},
+				{
+				"title": "WEBSITES UX / UI",
+				"text": "Virtus Dashboard"
+				}
+				])
+				
+			block twitter
+				+twitter
+			block footer
+				+footer
+				
+				
+
+			
+				
+			block vendors
+				// build:js js/vendor.js
+				script( src="js/jquery.min.js")
+				// endbuild
+
+			block scripts
+				// build:js js/main.js
+				script( src="js/main.js")
+				// endbuild
+				
+				// build:js js/slider.js
+				script( src="js/slider.js")
+				// endbuild
+
+
+				

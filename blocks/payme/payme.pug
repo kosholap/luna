@@ -1,0 +1,19 @@
+mixin payme(items)
+  +b.SECTION#payme.payme
+    +e.DIV.container
+      +b.DIV.payme-info
+        +e.H4.title <span>Payme</span> Mobile App
+        +e.P.text Payme is a best & simplest way to create your own mobile payment app 
+                  and fit in with as much information as you want. Perfect base to build 
+                  an amazing app with easy navigation and intuitive UX.
+        +e.A.btn(href="#") SEE CASE STUDY
+      +b.DIV.payme-screen
+        +e.IMG(src="img/screen1.png")
+        +e.IMG(src="img/screen2.png")
+      +b.DIV.payme-websites
+        each item in items
+          +b.DIV.payme-website
+            +e.H5.title= item.title
+            +e.P.text= item.text
+        
+          

@@ -1,0 +1,18 @@
+mixin header()
+  +b.HEADER.header
+    +e.DIV.container
+      +e.DIV.logo
+        +b.A.logo(href="#")
+          +e.IMG.img(src="img/Logo.png")
+      +b.NAV.nav
+        +e.P.title Menu
+        +e.A.hamburger(href="#")
+          +e.IMG(src="img/burger.png")
+        +b.DIV.nav-container
+          +e.A.item(href="#about") About us
+          +e.A.item(href="#what") What we do
+          +e.A.item(href="#payme") Payme
+          +e.A.item(href="#review") Reviews
+          +e.A.item(href="#contacts") Contact us
+          
+      
