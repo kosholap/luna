@@ -3,18 +3,18 @@
 ;(function($){
 
   var $header = $('.header');
-  var headerHeight = $header.css('height').slice(0, -2);
-
+  var headerHeight = $header.css('height');
+  var headerHeightInt = +headerHeight.slice(0, -2);
+  console.log(headerHeight);
+  $('.nav-container').css('top', $headerHeight);
 
   $(window).scroll(function(){
     if ($(this).scrollTop() > +headerHeight){
       $header.addClass('header--active');
-      var headerHeightActive = $header.css('height')
-      $('.nav-container').css('top', headerHeightActive);
+
       // alert('jj')
     } else {
       $header.removeClass('header--active');
-      $('.nav-container').css('top', '70px');
     }
   })
 

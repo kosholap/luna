@@ -1,12 +1,12 @@
 {
-  "name": "right_start",
+  "name": "luna",
   "version": "1.0.0",
-  "description": "gulp_pug_sass_bem_boilerplate",
+  "description": "luna",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Alexandr Ponomarenko",
+  "author": "Olha Kosholap",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.14.0",
