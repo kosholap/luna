@@ -1,3 +1,17 @@
+%slider-nav
+  position: absolute
+  top: 0
+  display: block
+  height: 100%
+  width: 20%
+  opacity: 0
+  background: linear-gradient(to right, $accent-color, rgba(255, 255, 255, 0))
+  transition: .3s
+  cursor: pointer
+  &:hover
+    transition: .3s
+    opacity: .7
+
 #slider
   position: relative
   width: 100%
@@ -7,33 +21,12 @@
   box-sizing: border-box
   overflow-x: hidden
 #prevSlide
-  position: absolute
-  top: 0
+  @extend %slider-nav
   left: 0
-  display: block
-  height: 100%
-  width: 200px
-  opacity: 0
-  background: linear-gradient(to right, $accent-color, rgba(255, 255, 255, 0))
-  transition: .3s
-  cursor: pointer
-  &:hover
-    transition: .3s
-    opacity: .7
 #nextSlide
-  position: absolute
-  top: 0
+  @extend %slider-nav
   right: 0
-  display: block
-  height: 100%
-  width: 200px
-  opacity: 0
   background: linear-gradient(to left, $accent-color, rgba(255, 255, 255, 0))
-  transition: .3s
-  cursor: pointer
-  &:hover
-    transition: .3s
-    opacity: .7
 
 
 .slides
